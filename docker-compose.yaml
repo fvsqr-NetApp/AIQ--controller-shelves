@@ -1,0 +1,10 @@
+services:
+  aiq:
+    container_name: aiq
+    image: bashjq
+    environment:
+      - AUTH_TOKEN=${AUTH_TOKEN}
+    volumes:
+      - .serials:/opt/aiq/serials
+      - .:/csv
+      - ./controller-shelves.sh:/controller-shelves.sh
