@@ -1,7 +1,7 @@
 services:
   aiq:
-    container_name: aiq
-    image: bashjq
+    container_name: aiq--controller-shelves
+    image: ghcr.io/fvsqr-netapp/aiq--controller-shelves:latest
     environment:
       - AUTH_TOKEN=${AUTH_TOKEN}
     volumes:
